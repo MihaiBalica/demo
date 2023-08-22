@@ -1,0 +1,6 @@
+/home/mihaib/IdeaProjects/demo/src/test/java/org/example/common/request/BaseRequest.java
+/home/mihaib/IdeaProjects/demo/src/test/java/org/example/common/response/BaseResponse.java
+/home/mihaib/IdeaProjects/demo/src/test/java/org/example/tests/BaseTest.java
+/home/mihaib/IdeaProjects/demo/src/test/java/org/example/tests/HttpMethodsTest.java
+/home/mihaib/IdeaProjects/demo/src/test/java/org/example/common/logger/TestLogger.java
+/home/mihaib/IdeaProjects/demo/src/test/java/org/example/runners/TestRunner.java

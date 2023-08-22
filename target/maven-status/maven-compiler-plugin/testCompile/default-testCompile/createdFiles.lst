@@ -1,0 +1,6 @@
+org/example/common/request/BaseRequest.class
+org/example/runners/TestRunner.class
+org/example/common/response/BaseResponse.class
+org/example/tests/BaseTest.class
+org/example/common/logger/TestLogger.class
+org/example/tests/HttpMethodsTest.class
