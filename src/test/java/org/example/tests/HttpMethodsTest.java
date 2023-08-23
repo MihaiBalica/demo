@@ -1,6 +1,5 @@
 package org.example.tests;
 
-import io.restassured.response.Response;
 import org.example.common.RequestFailedException;
 import org.example.common.logger.TestLogger;
 import org.example.common.response.BaseResponse;
@@ -8,13 +7,10 @@ import org.example.objects.CarRequest;
 import org.example.objects.GetResponse;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class HttpMethodsTest extends BaseTest {
-//    private Response response;
     private final TestLogger logger = new TestLogger(HttpMethodsTest.class);
 
     @DisplayName("GET request test with no params")
@@ -61,7 +57,7 @@ public class HttpMethodsTest extends BaseTest {
     @DisplayName("POST request test with JSON body")
     @Test
     public void testPostRequest() {
-        CarRequest carRequest = new CarRequest("BMW","EV");
+        CarRequest carRequest = new CarRequest("BMW", "EV");
         try {
             GetResponse getResponse = sendPostRequest(carRequest, GetResponse.class);
             assertNotNull(getResponse);
@@ -97,7 +93,7 @@ public class HttpMethodsTest extends BaseTest {
     @DisplayName("PATCH request test with JSON body")
     @Test
     public void testPatchRequest() {
-        CarRequest carRequest = new CarRequest("BMW","Diesel");
+        CarRequest carRequest = new CarRequest("BMW", "Diesel");
         try {
             GetResponse getResponse = sendPostRequest(carRequest, GetResponse.class);
             assertNotNull(getResponse);
